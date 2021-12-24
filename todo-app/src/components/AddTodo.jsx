@@ -18,4 +18,4 @@ const AddToDo = () =>
 
     )
 }
-export default App;
+export default AddToDo;

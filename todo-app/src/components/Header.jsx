@@ -1,5 +1,5 @@
-import{ Box,Heading } from '@chakra-ui/react';
-import{ Fasun,Famoon} from'react-icons/fa';
+import{ Box,Heading,IconButton } from '@chakra-ui/react';
+import{ FaSun,} from'react-icons/fa';
 const Header = () =>
 {
 return(
