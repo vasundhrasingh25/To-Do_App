@@ -10,7 +10,14 @@ const AddToDo = ({ todos, setTodo}) =>
         console.log(todo);
     }
     const addTodo =() =>{
-        if(!todo)return;
+        if(!todo){
+            toast({
+                title:'No ToDo items to Add',
+                status:'error',
+                durationm:'3000',
+                isClosable:true
+            })
+        }
         const newTodo={
             id:11212121,
             text:todo
