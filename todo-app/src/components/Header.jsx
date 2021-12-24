@@ -1,5 +1,5 @@
 import{ Box,Heading,IconButton,useColorMode } from '@chakra-ui/react';
-import{ FaSun,FarMoon} from'react-icons/fa';
+import{ FaSun,FaMoon} from'react-icons/fa';
 
 const Header = () =>
 {
@@ -7,7 +7,7 @@ const Header = () =>
 return(
 <Box display ="flex" p={6}> 
     <IconButton 
-    icon={colorMode ==='light'?<FaSun/> :<FarMoon/>}
+    icon={colorMode ==='light'?<FaSun/> :<FaMoon/>}
      isRound={true}
       mr={5}
       onClick={toggleColorMode}
