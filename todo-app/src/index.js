@@ -6,8 +6,11 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+  <ChakraProvider>
+  <ColorModeScript initialColorMode="light" />
     <App />
-  </React.StrictMode>,
+    </ChakraProvider>
+  </React.StrictMode>, 
   document.getElementById('root')
 );
 
