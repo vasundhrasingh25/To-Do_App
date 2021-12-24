@@ -1,5 +1,5 @@
 import{ Box,Heading,IconButton,useColorMode } from '@chakra-ui/react';
-import{ FaSun,FarMoon} from'react-icons/Fa';
+import{ FaSun,FarMoon} from'react-icons/fa';
 
 const Header = () =>
 {
