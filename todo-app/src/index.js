@@ -9,7 +9,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider>
-  <ColorModeScript initialColorMode="light" />
+  {/* <ColorModeScript initialColorMode="light" /> */}
     <App />
     </ChakraProvider>
   </React.StrictMode>,
