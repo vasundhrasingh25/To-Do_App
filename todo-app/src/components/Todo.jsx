@@ -2,6 +2,7 @@ import { Text, IconButton, HStack, StackDivider } from "@chakra-ui/react";
 import { FaTrash } from 'react-icons/fa';
 
 
+
 const Todo = ({ todo, deleteTodo }) => {
     return (
         <HStack p={2}>
