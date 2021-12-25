@@ -18,7 +18,7 @@ function App() {
    <Header />
      <Box
        w='100%'
-       maxW={{base: '80Vw', sm: '80Vw', lg: '50Vw', xl= '40Vw'}}
+       maxW={{base: '80Vw', sm: '80Vw', lg: '50Vw', xl: '40Vw'}}
      >
        <AddToDo todos={todos} setTodos={setTodos} />
        <Todos todos={todos} deleteTodo={deleteTodo} />

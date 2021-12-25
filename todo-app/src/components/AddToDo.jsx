@@ -37,7 +37,7 @@ const AddToDo = ({ todos, setTodo}) =>
   <Button        
   colorScheme="green"
   px={8}
-  onClick={() =>addToDo()}
+  onClick={() =>AddToDo()}
   >
    Add Todo 
    </Button>
