@@ -5,11 +5,11 @@ import {VStack, Box} from '@chakra-ui/react';
 import Header from'./components/Header';
 import AddTodo from './components/AddTodo';
 import Todos from './components/Todos';
-const initialTodo=[
+ const initialTodo=[
 
   {
     id:1,
-    text:'Hello'
+   text:'Hello'
   }
 ];
 
