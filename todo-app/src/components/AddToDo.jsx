@@ -17,7 +17,7 @@ const AddTodo = ({ todos, setTodos}) =>
                 duration:'3000',
                 isClosable:true
             })
-        };
+        }
         const newTodo={
             id:11212121,
             text:todo
