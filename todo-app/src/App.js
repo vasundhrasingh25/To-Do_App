@@ -8,7 +8,7 @@ import Todos from './components/Todos';
 const initialTodo=[
 
   {
-    id:1
+    id:1,
     text:'Hello'
   }
 ];
