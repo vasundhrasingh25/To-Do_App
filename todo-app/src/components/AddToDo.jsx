@@ -1,9 +1,9 @@
 
 import{useState}from 'react';
 import {HStack,Input,Button,useToast}from '@chakra-ui/react';
-const AddTodo = ({ todos, setTodo}) =>
+const AddTodo = ({ todos, setTodos}) =>
 {
-    const [todo,setTodos]=useState(' ');
+    const [todo,setTodo]=useState(' ');
     const  toast=useToast();
     const handleChange= (e) => {
         setTodo(e.target.value);
@@ -17,7 +17,7 @@ const AddTodo = ({ todos, setTodo}) =>
                 duration:'3000',
                 isClosable:true
             })
-        }
+        };
         const newTodo={
             id:11212121,
             text:todo
