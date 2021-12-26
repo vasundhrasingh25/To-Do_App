@@ -1,6 +1,7 @@
 
 import{useState}from 'react';
 import {HStack,Input,Button,useToast}from '@chakra-ui/react';
+import{ nanoid }from '@nanoid';
 const AddTodo = ({ todos, setTodos}) =>
 {
     const [todo,setTodo]=useState(' ');
@@ -19,7 +20,7 @@ const AddTodo = ({ todos, setTodos}) =>
             })
         }
         const newTodo={
-            id:11212121,
+            id:nanoid(),
             text:todo
         }
         setTodos([...todos,newTodo])
