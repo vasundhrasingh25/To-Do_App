@@ -25,7 +25,7 @@ const AddTodo = ({ todos, setTodo}) =>
         setTodos([...todos,newTodo])
         setTodo('')
     }
-    return(
+    return(  
         <HStack>
         
             <Input
