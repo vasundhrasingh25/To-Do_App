@@ -1,6 +1,6 @@
 
-import {useState} from 'react'; 
-import {VStack, Box, textDecoration} from '@chakra-ui/react';
+import {useState, useEffect} from 'react'; 
+import {VStack, Box} from '@chakra-ui/react';
 //components
 import Header from'./components/Header';
 import AddTodo from './components/AddTodo';
@@ -12,9 +12,14 @@ const initialTodo=[
     text:'Hello'
   }
 ];
+
 function App() {
-  const [todos,setTodos]=useState([]);
-   
+  const [todos, setTodos] = useState(() => JSON.parse(localStorage.getItem('todos')) || [])
+  
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos))
+  }, [todos])
+
   const deleteTodo = (id) => {
     const updatedTodo = todos.filter(todo => todo.id !== id);
     setTodos(updatedTodo);
