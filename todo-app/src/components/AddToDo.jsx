@@ -1,7 +1,7 @@
 
 import{useState}from 'react';
 import {HStack,Input,Button,useToast}from '@chakra-ui/react';
-const AddToDo = ({ todos, setTodo}) =>
+const AddTodo = ({ todos, setTodo}) =>
 {
     const [todo,setTodos]=useState(' ');
     const  toast=useToast();
@@ -14,7 +14,7 @@ const AddToDo = ({ todos, setTodo}) =>
             toast({
                 title:'No ToDo items to Add',
                 status:'error',
-                durationm:'3000',
+                duration:'3000',
                 isClosable:true
             })
         }
@@ -29,15 +29,15 @@ const AddToDo = ({ todos, setTodo}) =>
         <HStack>
         
             <Input
+                variant="filled"
             placeholder="Add ToDo items..."
-            variant="filled"
             value={todo}
             onChange={(e)=>handleChange(e)}
   />
   <Button        
   colorScheme="green"
   px={8}
-  onClick={() =>addToDo()}
+  onClick={() =>addTodo()}
   >
    Add Todo 
    </Button>
@@ -45,4 +45,4 @@ const AddToDo = ({ todos, setTodo}) =>
 
     )
 }
-export default AddToDo;
+export default AddTodo;

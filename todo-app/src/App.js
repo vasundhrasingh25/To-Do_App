@@ -3,7 +3,7 @@ import {useState} from 'react';
 import {VStack, Box} from '@chakra-ui/react';
 //components
 import Header from'./components/Header';
-import AddToDo from './components/AddToDo';
+import AddTodo from './components/AddTodo';
 import Todos from './components/Todos';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
        w='100%'
        maxW={{base: '80Vw', sm: '80Vw', lg: '50Vw', xl: '40Vw'}}
      >
-       <AddToDo todos={todos} setTodos={setTodos} />
+       <AddTodo todos={todos} setTodos={setTodos} />
        <Todos todos={todos} deleteTodo={deleteTodo} />
      </Box>
 </VStack>
