@@ -1,5 +1,5 @@
 
-import { VStack, StackDivider } from '@chakra-ui/react';
+import { VStack, StackDivider, Text } from '@chakra-ui/react';
 
 //components
 import Todo from './Todo';
@@ -16,7 +16,7 @@ const Todos = ({todos, deleteTodo}) => {
         >
             {
                 todos.length > 0 ? todos.map(todo => (
-                    <Todo todo={todo} deleteTodo={deleteTodo} />
+                    <Todo todo={todo} key={todo.id} deleteTodo={deleteTodo} />
                 )) : <EmptyTodo />
             }
         </VStack>
