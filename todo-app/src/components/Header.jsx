@@ -9,12 +9,15 @@ return(
     <IconButton 
     icon={colorMode ==='light'?<FaSun/> :<FaMoon/>}
      isRound={true}
-      mr={5}
+      mr={10}
+      mt={3}
       onClick={toggleColorMode}
     />
     <Heading
     bgGradient='linear(to-l,red.500,yellow.500,pink.200)'
     bgClip='text'
+    mr={40}
+    fontSize={50}
     >ToDo App</Heading>
 </Box>
 )

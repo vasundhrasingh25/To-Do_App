@@ -12,6 +12,7 @@ const EmptyTodo = () =>
         fontSize={20}
 
         >No Todo items to Display </Text>
+        
 
     )
 }
