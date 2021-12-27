@@ -29,7 +29,7 @@ const AddTodo = ({ todos, setTodos}) =>
         
             <Input
                 variant="filled"
-            placeholder="Add ToDo items..."
+            placeholder="✍Add ToDo items..."
             value={todo}
             onChange={(e)=>handleChange(e)}
   />
